@@ -34,7 +34,7 @@ function AddTour() {
                 name="description"
                 value={tour.description}
                 onChange={handleChange}
-                placeholder = "Description"
+                placeholder="Description"
             />
             <Button variant="text" onClick={addTour}>Add</Button>
         </div>

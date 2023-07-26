@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import TourList from './components/tourList';
 import DeleteTour from './components/deleteTour';
 import AddTour from './components/add';

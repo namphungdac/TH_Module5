@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router";
-import { Link } from "react-router-dom";
-import { TextField, Button, Table, TableContainer, TableHead, TableRow, TableCell, TableBody, Paper } from "@mui/material"
+import { Button, Table, TableContainer, TableHead, TableRow, TableCell, TableBody, Paper } from "@mui/material"
 
 function TourList() {
     const navigate = useNavigate();
@@ -17,7 +16,7 @@ function TourList() {
 
     return (
         <>
-            <Button variant="text" onClick={() => { navigate("/add")}}>Add</Button>
+            <Button variant="text" onClick={() => { navigate("/add") }}>Add</Button>
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
                     <TableHead>
@@ -38,8 +37,8 @@ function TourList() {
                                 <TableCell component="th" scope="row">{row.title}</TableCell>
                                 <TableCell align="left">{row.price}</TableCell>
                                 <TableCell align="left">
-                                    <Button variant="text" onClick={() => { navigate(`/edit/${row.id}`)}}>Edit</Button>
-                                    <Button variant="text" onClick={() => { navigate(`/delete/${row.id}`)}} >Delete</Button>
+                                    <Button variant="text" onClick={() => { navigate(`/edit/${row.id}`) }}>Edit</Button>
+                                    <Button variant="text" onClick={() => { navigate(`/delete/${row.id}`) }} >Delete</Button>
                                 </TableCell>
                             </TableRow>
                         ))}
